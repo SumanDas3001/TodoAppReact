@@ -31,8 +31,6 @@ export class Todoitem extends Component {
 	// }
 
 	
-
-	
 	render() {
 		const { id, title } = this.props.todo;
 		return (
@@ -52,7 +50,9 @@ export class Todoitem extends Component {
 
 // proptypes
 Todoitem.propTypes = {
-	todo: PropTypes.object.isRequired
+	todo: PropTypes.object.isRequired,
+	delTodo: PropTypes.func.isRequired,
+	markComplete: PropTypes.func.isRequired 
 }
 
 // variable
